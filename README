@@ -8,4 +8,7 @@ Shruti Mishra
 Shmuel M. Rubinstein
 Chris H. Rycroft
 
-Mathematica code for the neural network. Put everything in the same directory and unzip the zip folder. For more training data, contact Yohai or Shmuel. 
+Mathematica code for the neural network. Put everything in the same directory and unzip the zip folder. For more training data, contact Yohai or Shmuel.
+
+Trained weights can be downloaded here:
+https://www.dropbox.com/s/8ph0ll2l2u7ao0g/Trained_Weights_NI.wlnet?dl=0 
