@@ -1,0 +1,9 @@
+parab_func.o: parab_func.cc parab_func.hh
+bi_interp.o: bi_interp.cc bi_interp.hh
+bi_image.o: bi_image.cc bi_image.hh bi_interp.hh
+facet.o: facet.cc facet.hh ./shared/vec.hh ./shared/mat.hh \
+ ./shared/vec.hh ./voro++_2d/cell_2d.hh ./voro++_2d/common.hh \
+ ./voro++_2d/config.hh
+sim_flatfold.o: sim_flatfold.cc sim_flatfold.hh facet.hh \
+ ./shared/vec.hh ./shared/mat.hh ./shared/vec.hh \
+ ./voro++_2d/cell_2d.hh ./voro++_2d/common.hh ./voro++_2d/config.hh
