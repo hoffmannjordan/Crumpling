@@ -12,3 +12,9 @@ Mathematica code for the neural network. Put everything in the same directory an
 
 Trained weights can be downloaded here:
 https://www.dropbox.com/s/8ph0ll2l2u7ao0g/Trained_Weights_NI.wlnet?dl=0 
+
+
+Flat folding code written in C++ by Chris H. Rycroft (chr@seas.harvard.edu). 
+Uses voro++_2d— see: http://math.lbl.gov/voro++/
+
+Chris H. Rycroft, Voro++: A three-dimensional Voronoi cell library in C++, Chaos 19, 041111 (2009).
