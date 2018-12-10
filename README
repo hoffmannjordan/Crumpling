@@ -1,7 +1,4 @@
-Machine Learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets
-
-See: https://arxiv.org/abs/1807.01437
-
+# Machine Learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets
 Jordan Hoffmann
 Yohai Bar-Sinai
 Lisa Lee
@@ -10,6 +7,10 @@ Shruti Mishra
 Shmuel M. Rubinstein
 Chris H. Rycroft
 
+# Research Article
+Preprint Available At: https://arxiv.org/abs/1807.01437
+
+# Code Availibility
 Mathematica code for the neural network. Put everything in the same directory and unzip the zip folder. For more training data, contact Yohai or Shmuel.
 
 Trained weights can be downloaded here:
@@ -29,3 +30,5 @@ Running the executable generates two .dat files and a fold.gnuplot script. The f
 > mkdir images
 > python run.py > run.sh
 > sh run.sh
+
+# Article Description
