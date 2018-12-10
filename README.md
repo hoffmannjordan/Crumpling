@@ -33,3 +33,11 @@ Running the executable generates two .dat files and a `fold.gnuplot` script. The
 > sh run.sh
 ```
 # Article Description
+In the paper, we used tools from machine learning to try to understand the physics of crumpled sheets. Below, we show an image of a rigid, flat-folded 
+sheet along with a crumple sheet. Below, we show curvature maps from a flat-folded and crumpled sheet. The two images are not form the same sheets.
+![Crumpled Sheet](../master/ims/sheets.png)
+In the case of rigid flat folding, there are specific geometric rules that govern each vertex. Therefore, given either the ridges or the valleys, the location of
+ the other can be inferred with near certainty. We asked to what degree this is true in crumpled sheets.
+ Our goal is outlined below, where we try to train a network that is given the valleys to predict the distance from the nearest ridge.
+ ![Crumpled Sheet](../master/ims/goal.png) 
+ _to be continued_
