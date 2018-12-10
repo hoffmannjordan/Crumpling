@@ -1,10 +1,9 @@
 # Machine Learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets
-Jordan Hoffmann
-Yohai Bar-Sinai
-Lisa Lee
-Jovana Andrejevic
-Shruti Mishra
-Shmuel M. Rubinstein
+*Jordan Hoffmann*, *Yohai Bar-Sinai*,
+Lisa Lee,
+Jovana Andrejevic,
+Shruti Mishra,
+Shmuel M. Rubinstein, and
 Chris H. Rycroft
 
 # Research Article
@@ -40,4 +39,8 @@ In the case of rigid flat folding, there are specific geometric rules that gover
  the other can be inferred with near certainty. We asked to what degree this is true in crumpled sheets.
  Our goal is outlined below, where we try to train a network that is given the valleys to predict the distance from the nearest ridge.
  ![Crumpled Sheet](../master/ims/goal.png) 
- _to be continued_
+We begin by testing whether we can capture both simulated and experimental flat folding. Using the code provided in this repository, `flatfold_gen.cc`, it is 
+easy to generate random examples of flat-folded sheets. We trained on these, predicting the ridges given the valleys. However, when moving from generated data to experimental data, things didn't go too well. To try to help with this, we added noise to the generated data. Then, we showed we were able to make meaningful predictions on the experimental scans.
+ ![Flat Sheet](../master/ims/flat.png) 
+ From here, we wanted to ask to what extend we could make accurate predictions with crumpled sheets. However, with very limited data, we faced a large hurdle. 
+ We had only ~500 scans that came from a total of 31 different experiments. Scans from the same experiment are very correlated, as the same sheet is repeatedly crumpled. Therefore, we augmented this small experimental set with _to be continued_ 
