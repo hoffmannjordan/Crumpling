@@ -17,7 +17,7 @@ https://www.dropbox.com/s/8ph0ll2l2u7ao0g/Trained_Weights_NI.wlnet?dl=0
 
 
 Flat folding code written in C++ by Chris H. Rycroft (chr@seas.harvard.edu). 
-Uses voro++_2d€” see: http://math.lbl.gov/voro++/
+Uses voro++_2d see: http://math.lbl.gov/voro++/
 
 Chris H. Rycroft, Voro++: A three-dimensional Voronoi cell library in C++, Chaos 19, 041111 (2009).
 
@@ -38,9 +38,14 @@ sheet along with a crumple sheet. Below, we show curvature maps from a flat-fold
 In the case of rigid flat folding, there are specific geometric rules that govern each vertex. Therefore, given either the ridges or the valleys, the location of
  the other can be inferred with near certainty. We asked to what degree this is true in crumpled sheets.
  Our goal is outlined below, where we try to train a network that is given the valleys to predict the distance from the nearest ridge.
- ![Crumpled Sheet](../master/ims/goal.png) 
+ ![Target](../master/ims/goal.png) 
 We begin by testing whether we can capture both simulated and experimental flat folding. Using the code provided in this repository, `flatfold_gen.cc`, it is 
 easy to generate random examples of flat-folded sheets. We trained on these, predicting the ridges given the valleys. However, when moving from generated data to experimental data, things didn't go too well. To try to help with this, we added noise to the generated data. Then, we showed we were able to make meaningful predictions on the experimental scans.
  ![Flat Sheet](../master/ims/flat.png) 
  From here, we wanted to ask to what extend we could make accurate predictions with crumpled sheets. However, with very limited data, we faced a large hurdle. 
- We had only ~500 scans that came from a total of 31 different experiments. Scans from the same experiment are very correlated, as the same sheet is repeatedly crumpled. Therefore, we augmented this small experimental set with _to be continued_ 
+ We had only ~500 scans that came from a total of 31 different experiments. Scans from the same experiment are very correlated, as the same sheet is repeatedly crumpled. Therefore, we augmented this small experimental set with computer generated sheets using the `flatfold_gen.cc` code in this respository. In the figure below, we ask by augmenting the training data from crumpled sheets with computer generated data from a simpler, sister system whether we can increase the performance. 
+ ![Lambda](../master/ims/Vary_Lambda_c.png)
+ We find that not only by increasing the amount of flat-folding data that is seen decreases the loss, we are able to get improved performance on multiple metrics (including Pearson correlation, an "accuracy", and a z-score (shown in SI)). We show that with different amounts of data, we get a slightly different _gestalt_ from our neural network. 
+We wanted to ask to what degree this improved performance was due to our specific augmentation of a true physical system. To do this, we violated Kawasaki and Maekawa's rules of crumpled sheets. We randomly recolored vertices s.t. there was no longer a 3:1 ratio at each junction. We also perturbed the position of vertices such that alternate angles no longer summed to pi. Examples of such violated sheets are shown below.
+ ![Violate](../master/ims/Violate2.png)
+We find, shown in panel B,C of the figure where we varied the fraction of flat folding data, that by violating these physical rules we deteriorate the performance of our predictions. 
