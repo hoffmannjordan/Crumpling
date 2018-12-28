@@ -50,4 +50,4 @@ We wanted to ask to what degree this improved performance was due to our specifi
  ![Violate](../master/ims/Violate2.png)
 We find, shown in panel B,C of the figure where we varied the fraction of flat folding data, that by violating these physical rules we deteriorate the performance of our predictions. 
 Below, there is a gif where we violate Kawasaki's rule without causing interesections. We cohose a violation approximately 10% the way through this video.
-![](myimage.gif)
+![](../master/ims/myimage.gif)
