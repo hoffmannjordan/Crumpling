@@ -48,6 +48,6 @@ easy to generate random examples of flat-folded sheets. We trained on these, pre
  We find that not only by increasing the amount of flat-folding data that is seen decreases the loss, we are able to get improved performance on multiple metrics (including Pearson correlation, an "accuracy", and a z-score (shown in SI)). We show that with different amounts of data, we get a slightly different _gestalt_ from our neural network. 
 We wanted to ask to what degree this improved performance was due to our specific augmentation of a true physical system. To do this, we violated Kawasaki and Maekawa's rules of crumpled sheets. We randomly recolored vertices s.t. there was no longer a 3:1 ratio at each junction. We also perturbed the position of vertices such that alternate angles no longer summed to pi. Examples of such violated sheets are shown below.
  ![Violate](../master/ims/Violate2.png)
-We find, shown in panel B,C of the figure where we varied the fraction of flat folding data, that by violating these physical rules we deteriorate the performance of our predictions. 
-Below, there is a gif where we violate Kawasaki's rule without causing interesections. We cohose a violation approximately 10% the way through this video.
+We find, shown in panel B and C of the figure where we varied the fraction of flat folding data, that by violating these physical rules we deteriorate the performance of our predictions. 
+Below, there is a gif where we violate Kawasaki's rule without causing interesections. We choose a violation approximately 10% the way through this video.
 ![](../master/ims/myimage.gif)
