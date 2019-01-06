@@ -1,7 +1,7 @@
 # Machine Learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets
 [*Jordan Hoffmann*](https://jhoffmann.org/),
 [*Yohai Bar-Sinai*](https://yohai.github.io),
-Lisa Lee,
+[Lisa Lee](https://projects.iq.harvard.edu/smrlab/people/lisa-lee),
 Jovana Andrejevic,
 Shruti Mishra,
 [Shmuel M. Rubinstein](https://www.seas.harvard.edu/directory/shmuel), and
