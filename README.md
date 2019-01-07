@@ -9,7 +9,8 @@ Shruti Mishra,
 
 # Research Article
 Preprint Available At: https://arxiv.org/abs/1807.01437
-
+or, **Click on Image Below**
+[![Abstract](./ims/abstract.png)](https://arxiv.org/pdf/1807.01437.pdf)
 # Code Availability
 Mathematica code for the neural network. Put everything in the same directory and unzip the zip folder. For more training data, contact Yohai or Shmuel.
 
