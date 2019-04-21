@@ -34,8 +34,12 @@ Running the executable generates two .dat files and a `fold.gnuplot` script. The
 > sh run.sh
 ```
 # Article Description
-In the paper, we used tools from machine learning to try to understand the physics of crumpled sheets. Below, we show an image of a rigid, flat-folded 
-sheet along with a crumple sheet. Below, we show curvature maps from a flat-folded and crumpled sheet. The two images are not form the same sheets.
+In the paper, we used tools from machine learning to try to understand the physics of crumpled sheets  of mylar. 
+Using a laser, we scan the sheet to extract the heightmap. From the heightmap, we compute the mean curvature.
+![scans](../master/ims/scans.png)
+Below, we show an image of a rigid, flat-folded 
+sheet along with a crumple sheet.
+ Below, we show curvature maps from a flat-folded and crumpled sheet. The two images are not form the same sheets.
 ![Crumpled Sheet](../master/ims/sheets.png)
 In the case of rigid flat folding, there are specific geometric rules that govern each vertex. Therefore, given either the ridges or the valleys, the location of
  the other can be inferred with near certainty. We asked to what degree this is true in crumpled sheets.
