@@ -9,13 +9,20 @@ Shruti Mishra,
 
 # Citation
 ```
-J. Hoffmann, Y. Bar-Sinai, L. M. Lee, J. Andrejevic, S. Mishra, S. M. Rubinstein, C. H. Rycroft, Machine learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets. Sci. Adv. 5, eaau6792 (2019).
+@article{hoffmann2019machine,
+  title={achine learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets},
+  author={Hoffmann, Jordan and Bar-Sinai, Yohai and Lee, Lisa and Andrejevic, Jovana and Mishra, Shruti and Rubinstein, Shmuel M and Rycroft, Chris H},
+  journal={Science Advances},
+  volume={5},
+  number={},
+  pages={eaau6792},
+  year={2019},
+  publisher={American Association for the Advancement of Science}
+}
 ```
 
 # Research Article
 Publisher version (Open Access): https://advances.sciencemag.org/content/5/4/eaau6792
-
-Preprint Available At: https://arxiv.org/abs/1807.01437
 or, **Click on Image Below**
 [![Abstract](./ims/abstract.png)](https://advances.sciencemag.org/content/5/4/eaau6792)
 # Code Availability
