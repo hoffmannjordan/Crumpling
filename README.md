@@ -10,7 +10,7 @@ Shruti Mishra,
 # Citation
 ```
 @article{hoffmann2019machine,
-  title={achine learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets},
+  title={Machine learning in a data-limited regime: Augmenting experiments with synthetic data uncovers order in crumpled sheets},
   author={Hoffmann, Jordan and Bar-Sinai, Yohai and Lee, Lisa and Andrejevic, Jovana and Mishra, Shruti and Rubinstein, Shmuel M and Rycroft, Chris H},
   journal={Science Advances},
   volume={5},
